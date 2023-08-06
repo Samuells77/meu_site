@@ -1,41 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Samuel</title>
-  <style>
-    body {
-      
-    }
-    h1 {
-      color: rgb(151, 49, 49);
-      font-family: Impact, sans-serif;
-      margin: 0;
-      padding: 20px;
-    }
-    p {
-      color: rgb(0, 0, 0);
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      line-height: 1.5;
-      text-align: justify;
-      text-indent: 50px;
-    }
-    
-  </style>
-  
+  <title>Samuel Site</title>
+
+  <!-- Box Icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Custom CSS-->
+  <link rel="stylesheet" href="./style.css"
 </head>
+
 <body>
-  <img src="_imagens/SoftProd_SuperDark.png"/>
-  <h1>Sobre Mim</h1>
-  <p>Eu sou o Samuel, tenho 21 anos, sou estudante de Engenharia Civil, e atualmente trabalho como Desenhista Detalhista. Estou desenvolvendo esta página com objetivo de apresentar  meus projetos.</p>
-  
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/zCCFjXMa6dI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <!-- Header Design -->
+  <header class="header">
+    <a href="#" class="logo">Samuel Site</a>
+
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section Design-->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3>Olá, sou o</h3>
+      <h1>Samuel de Lima da Silva</h1>
+      <h3>E eu sou um <span>Estudante</span></h3>
+      <p>Tenho 21 anos, e estou desenvolvendo está página para apresentar meus projetos</p>
+      <div class="social-media">
+        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+        <a href="#"><i class='bx bxl-youtube' ></i></a>
+      </div>
+    </div>
+
+    <div class="home-img">
+      <img src="./assets/LOGO 2.png"
+    </div>
+  </section>
 
   <footer>
     <p>© 2023 - Samuel de Lima da Silva</p>
   </footer>
+
+  <script src="./script.js"></script>
 </body>
+
 </html>
