@@ -1,18 +1,25 @@
-var videoElement = document.getElementById("video-background")
-var sourceElement = document.getElementById("video-source")
+/*==================== Scroll Sections Active Link =========================*/
+let sections = document.querySelectorAll("section")
+let navLinks = document.querySelectorAll("header nav a")
 
-var videoIndex = 1
-var videoPaths = [
-  "./assets/video-background.mp4",
-  "./assets/video-background2.mp4",
-]
+window.onscroll = () => {
+  sections.forEach((sec) => {
+    let top = window.scrollY
+    let offset = sec.offsetTop - 150
+    let height = sec.offsetHeight
+    let id = sec.getAttribute("id")
 
-function toggleMode() {
-  const html = document.documentElement
+    if (top >= offset && top < offset + height) {
+      navLinks.forEach((links) => {
+        links.classList.remove("active")
+        document
+          .querySelector("header nav a[href*=" + id + "]")
+          .classList.add("active")
+      })
+    }
+  })
+  /*==================== Sticky Navbar =========================*/
+  let header = document.querySelector('header');
 
-  html.classList.toggle("light")
-  videoIndex = (videoIndex + 1) % videoPaths.length
-  sourceElement.src = videoPaths[videoIndex]
-  videoElement.load()
-}
-videoElement.addEventListener("ended", switchVideo)
+  header.classList.toggle('sticky', window.scrollY > 100);
+};
