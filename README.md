@@ -2,7 +2,7 @@
 
 Meu site/portfolio.
 
-![preview](./.github/video.mp4)
+![preview](./.github/gif.gif)
 
 
 [🔗 Clique aqui para acessar](https://samuells77.github.io/meu_site/)
