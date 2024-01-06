@@ -1,12 +1,11 @@
-# SLS Links
+# Samuel Site
 
-Direcionador de Links para meu projeto chamado SLS Project Builder, uma empresa de projetos.
+Meu site/portfolio.
 
-![preview](./.github/light-mode.jpg)
-![preview](./.github/dark-mode.jpg)
+![preview](./.github/video.mp4)
 
 
-[🔗 Clique aqui para acessar](https://samuells77.github.io/sls-links/)
+[🔗 Clique aqui para acessar](https://samuells77.github.io/meu_site/)
 
 ## 🧰 Tecnologias
 
@@ -14,7 +13,6 @@ Direcionador de Links para meu projeto chamado SLS Project Builder, uma empresa 
 - CSS
 - JavaScript
 - Git e Github
-- Figma
 
 ## 📱 Contato
 
