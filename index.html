@@ -174,23 +174,42 @@
     <section class="contact" id="contact">
       <h2 class="heading">Contato</h2>
 
-      <form action="#">
-        <div class="input-box">
-          <input type="text" placeholder="Nome Completo" />
-          <input type="email" placeholder="Email" />
-        </div>
-        <div class="input-box">
-          <input type="number" placeholder="Número do Celular" />
-          <input type="text" placeholder="Assunto" />
-        </div>
+      <form action="https://api.staticforms.xyz/submit" method="post">
+        <input type="text" name="name" placeholder="Nome Completo" required />
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          autocomplete="off"
+          required
+        />
+        <input
+          type="tel"
+          name="phone"
+          minlength="11"
+          maxlength="11"
+          placeholder="Número do Celular"
+          required
+        />
+        <input type="text" name="subject" placeholder="Assunto" required />
         <textarea
-          name=""
-          id=""
+          name="message"
           cols="30"
           rows="10"
           placeholder="Sua mensagem"
         ></textarea>
         <input type="submit" value="Enviar mensagem" class="btn" />
+
+        <input
+          type="hidden"
+          name="accessKey"
+          value="7d2e9556-40ea-405e-a715-c50bc12e61d6"
+        />
+        <input
+          type="hidden"
+          name="redirectTo"
+          value="http://127.0.0.1:5500/obrigado.html"
+        />
       </form>
     </section>
 

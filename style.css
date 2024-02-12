@@ -318,13 +318,13 @@ span {
   margin-bottom: 3rem;
 }
 
-.contact form .input-box {
+.contact form input {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.contact form .input-box input,
+.contact form input,
 .contact form textarea {
   width: 100%;
   padding: 1.5rem;
@@ -335,8 +335,8 @@ span {
   margin: 0.7rem 0;
 }
 
-.contact form .input-box input {
-  width: 49%;
+.contact form input {
+  width: 100%;
 }
 
 .contact form textarea {
@@ -344,6 +344,7 @@ span {
 }
 
 .contact form .btn {
+  background: var(--main-color);
   margin-top: 2rem;
   cursor: pointer;
 }
@@ -378,6 +379,45 @@ span {
 .footer-iconTop a i {
   font-size: 2.4rem;
   color: var(--second-bg-color);
+}
+
+/* Pag Obrigado */
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--second-bg-color);
+    flex-direction: column;
+}
+
+.text {
+    font-size: 45px;
+    color: #f5f5f5;
+    margin-bottom: 30px;
+}
+
+.paragrafo {
+    color: #f5f5f5;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.btn2 {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  font-size: 1.6rem;
+  color: var(--text-color);
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+
+.btn2:hover {
+  box-shadow: none;
 }
 
 /* BREAKPOINTS */
